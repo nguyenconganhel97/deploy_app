@@ -2176,6 +2176,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2185,7 +2194,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {
     var _this = this;
-    var uri = 'http://127.0.0.1:8000/api/posts';
+    console.log(1111);
+    var uri = "http://127.0.0.1:8000/api/posts";
     this.axios.get(uri).then(function (response) {
       _this.posts = response.data.data;
     });
@@ -20470,6 +20480,7 @@ var render = function () {
         1
       ),
     ]),
+    _vm._v(" "),
     _c("br"),
     _vm._v(" "),
     _c("table", { staticClass: "table table-hover" }, [
